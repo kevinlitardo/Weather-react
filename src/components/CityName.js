@@ -16,7 +16,6 @@ export default function CityName() {
 					<div className='cityName_grid_contain'>
 						<h3 className='cityName_city'>{weather.name}</h3>
 						<h3 className='cityName_country'>{weather.sys.country}</h3>
-						{/* Le agregue mas datos porque se ve vacio :P */}
 						<p className='cityName_temp'>
 							<i className='fas fa-thermometer-full cityName_temp_icon'></i>
 							<span className='cityName_temp_span'>

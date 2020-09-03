@@ -2,8 +2,10 @@ import React, { useState, useContext } from 'react'
 
 import { WeatherContext } from '../context/WeatherContext'
 
+// Buscador principal
 export default function Search() {
 	const { changeCity } = useContext(WeatherContext)
+	// Valor del input para buscar la ciudad
 	const [keyword, setKeyword] = useState('')
 
 	const onChange = (e) => {

@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 
 import { WeatherContext } from '../context/WeatherContext'
 
+// Contenedor de la parte izquierda de la app
 export default function LeftDashboard() {
 	const { changeCity } = useContext(WeatherContext)
 

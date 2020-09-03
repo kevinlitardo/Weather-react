@@ -1,3 +1,26 @@
 .cityTemp {
 	@include card;
+	&_title {
+		@include card_title;
+	}
+
+	&_max_title,
+	&_min_title,
+	&_hum_title {
+		@include texts;
+	}
+
+	&_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		row-gap: 20px;
+		column-gap: 25px;
+	}
+
+	&_max,
+	&_min,
+	&_hum {
+		@include text-card;
+	}
 }

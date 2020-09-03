@@ -3,6 +3,7 @@ import React from 'react'
 import Toogle from '../components/Toogle'
 import CityNameRight from '../components/CityNameRight'
 
+// Contenedor de la parte derecha de la app
 export default function RightDashboard() {
 	return (
 		<div className='rightDashboard'>

@@ -1,15 +1,16 @@
-import React from "react";
+import React from 'react'
 
+// Componente que cambiara el tema de la app
 export default function Toogle() {
-  const handleChange = () => {
-    const root = document.querySelector("#root");
-    root.classList.toggle("dark");
-    console.log(root);
-  };
+	const handleChange = () => {
+		const root = document.querySelector('#root')
+		root.classList.toggle('dark')
+		console.log(root)
+	}
 
-  return (
-    <div className="toggle">
-      <input type="checkbox" onChange={handleChange} />
-    </div>
-  );
+	return (
+		<div className='toggle'>
+			<input type='checkbox' onChange={handleChange} />
+		</div>
+	)
 }

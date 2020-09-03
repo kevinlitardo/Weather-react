@@ -5,15 +5,17 @@ import CityTimezone from '../components/CityTimezone'
 import CityWind from '../components/CityWind'
 import CityTemp from '../components/CityTemp'
 
+// Contenedor de la parte central de la app
 export default function CardsDashboard() {
 	return (
 		<section className='cardsDashBoard'>
 			<Search />
 			<div className='cardsDashBoard_cards'>
+				{/* Componentes del dashboard */}
 				<CityName />
-				<CityTimezone />
-				<CityWind />
 				<CityTemp />
+				<CityWind />
+				<CityTimezone />
 			</div>
 		</section>
 	)
