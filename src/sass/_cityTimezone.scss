@@ -4,13 +4,13 @@
 		@include card_title;
 	}
 
+	&_grid {
+		@include grid_template;
+	}
+
 	&_lat_title,
 	&_long_title {
 		@include texts;
-	}
-
-	&_lat_title {
-		margin-top: 15px;
 	}
 
 	&_long,

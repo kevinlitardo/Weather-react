@@ -8,14 +8,11 @@
 	&_min_title,
 	&_hum_title {
 		@include texts;
+		margin: 0;
 	}
 
 	&_grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(3, 1fr);
-		row-gap: 20px;
-		column-gap: 25px;
+		@include grid_template;
 	}
 
 	&_max,

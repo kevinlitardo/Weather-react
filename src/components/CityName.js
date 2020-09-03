@@ -15,14 +15,20 @@ export default function CityName() {
 					</h1>
 					<div className='cityName_grid_contain'>
 						<h3 className='cityName_city'>{weather.name}</h3>
+
 						<h3 className='cityName_country'>{weather.sys.country}</h3>
+
+						<h3 className='cityName_temp_title'>Temperature:</h3>
 						<p className='cityName_temp'>
 							<i className='fas fa-thermometer-full cityName_temp_icon'></i>
+
 							<span className='cityName_temp_span'>
 								{(weather.main.temp - 273.15).toFixed(2)}
+
 								<span className='cityName_temp_span_deg'>°C</span>
 							</span>
 						</p>
+						<h3 className='cityName_humidity_title'>Humidity:</h3>
 						<p className='cityName_humidity'>
 							<i className='fas fa-cloud-rain cityName_humidity_icon'></i>
 							<span className='cityName_humidity_span'>
