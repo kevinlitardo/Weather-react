@@ -4,19 +4,17 @@
 		@include card_title;
 	}
 
-	&_lat,
-	&_long {
+	&_lat_title,
+	&_long_title {
 		@include texts;
-
-		&_span {
-			@include texts-span;
-			&_icon {
-				@include icons_card_span;
-			}
-		}
 	}
 
-	&_lat {
+	&_lat_title {
 		margin-top: 15px;
+	}
+
+	&_long,
+	&_lat {
+		@include text-card;
 	}
 }

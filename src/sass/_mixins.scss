@@ -1,4 +1,4 @@
-// Es card para estilos semi globales
+// Es para las cards
 @mixin card {
 	min-height: 200px;
 	height: 275px;
@@ -9,7 +9,7 @@
 	background: $bgLight;
 	box-shadow: 0.5px 1.5px 6px rgba($gray, 0.3);
 }
-
+// Dentro de las cards poner el mismo titulo
 @mixin card_title {
 	color: $gray;
 	letter-spacing: 0.7px;
@@ -18,32 +18,43 @@
 	font-size: 19.5px;
 	padding-bottom: 30px;
 
+	// Es el icono que esta por el title
 	&_icon {
 		margin-right: 8px;
 		font-size: 21px;
 	}
 }
 
+// Este fue usado en la primera card, pero en caso se repita
+// Es recomendable que veas como estan siendo usados
+// Para evitar conflictos con los otros &_ que se usan
 @mixin text-card {
+	// Icono de la card
 	&_icon {
 		color: $orange;
-		font-size: 24px;
+		margin-right: 10px;
+		font-size: 22px;
+		color: $orange;
 	}
 
 	&_span {
-		padding-left: 8px;
+		// Icono del lado de la medida donde estan las cantidades
 		font-size: 17px;
 		font-weight: 500;
+		// Es en donde se coloca la clase para denotar las cantidades en los span
+		// Se pueden colocar cuantos se necesiten, ya que no causa conflicto
 		&_porcentage,
 		&_deg {
+			//TODO: colocar una forma de medida global
 			font-size: 19px;
-			padding-left: 2px;
+			padding-left: 5px;
 			color: $darkBlue;
 			font-weight: 700;
 		}
 	}
 }
 
+// Este se usa en las cards para representar los textos dentro
 @mixin texts {
 	color: $darkBlue;
 	font-size: 20px;
@@ -52,6 +63,7 @@
 	letter-spacing: 0.5px;
 }
 
+// Es donde se ponen las mediciones y cantidades en las cards
 @mixin texts-span {
 	color: $desaturatedBlue;
 	font-weight: 600;
@@ -60,8 +72,6 @@
 	letter-spacing: 0.5px;
 }
 
+// Son para los iconos dentro de las cards que estan con el span
 @mixin icons_card_span {
-	margin-right: 10px;
-	font-size: 20px;
-	color: $orange;
 }

@@ -11,16 +11,10 @@
 
 	&_speed,
 	&_deg {
-		&_span {
-			@include texts-span;
-		}
-
-		&_icon {
-			@include icons_card_span;
-		}
+		@include text-card;
 	}
 
-	&_deg {
-		padding-top: 15px;
+	&_deg_title {
+		margin-top: 15px;
 	}
 }

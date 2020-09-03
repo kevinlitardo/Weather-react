@@ -14,15 +14,21 @@ export default function CityWind() {
 						Wind
 					</h2>
 					<h3 className='cityWind_speed_title'>Speed</h3>
-					<span className='cityWind_speed_span'>
-						<i className='fas fa-tachometer-alt cityWind_speed_icon'></i>
-						{weather.wind.speed}
-					</span>
+					<p className='cityWind_speed'>
+						<span className='cityWind_speed_span'>
+							<i className='fas fa-tachometer-alt cityWind_speed_icon'></i>
+							{weather.wind.speed}
+							<span className='cityWind_speed_span_deg'>km/h</span>
+						</span>
+					</p>
 					<h3 className='cityWind_deg_title'>Degrees</h3>
-					<span className='cityWind_deg_span'>
-						<i className='fas fa-location-arrow cityWind_deg_icon'></i>
-						{weather.wind.deg}
-					</span>
+					<p className='wityWind_deg'>
+						<span className='cityWind_deg_span'>
+							<i className='fas fa-location-arrow cityWind_deg_icon'></i>
+							{weather.wind.deg}
+							<span className='cityWind_deg_span_deg'>ppm</span>
+						</span>
+					</p>
 				</>
 			)}
 		</div>
