@@ -1,0 +1,67 @@
+// Es card para estilos semi globales
+@mixin card {
+	min-height: 200px;
+	height: 275px;
+	min-width: 226px;
+	width: 100%;
+	padding: 24px;
+	border-radius: $radius;
+	background: $bgLight;
+	box-shadow: 0.5px 1.5px 6px rgba($gray, 0.3);
+}
+
+@mixin card_title {
+	color: $gray;
+	letter-spacing: 0.7px;
+	font-weight: 600;
+	opacity: 0.8;
+	font-size: 19.5px;
+	padding-bottom: 30px;
+
+	&_icon {
+		margin-right: 8px;
+		font-size: 21px;
+	}
+}
+
+@mixin text-card {
+	&_icon {
+		color: $orange;
+		font-size: 24px;
+	}
+
+	&_span {
+		padding-left: 8px;
+		font-size: 17px;
+		font-weight: 500;
+		&_porcentage,
+		&_deg {
+			font-size: 19px;
+			padding-left: 2px;
+			color: $darkBlue;
+			font-weight: 700;
+		}
+	}
+}
+
+@mixin texts {
+	color: $darkBlue;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 13px;
+	letter-spacing: 0.5px;
+}
+
+@mixin texts-span {
+	color: $desaturatedBlue;
+	font-weight: 600;
+	padding-left: 5px;
+	margin-bottom: 13px;
+	letter-spacing: 0.5px;
+}
+
+@mixin icons_card_span {
+	margin-right: 10px;
+	font-size: 20px;
+	color: $orange;
+}

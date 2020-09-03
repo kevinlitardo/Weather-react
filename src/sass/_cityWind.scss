@@ -1,0 +1,26 @@
+.cityWind {
+	@include card;
+	&_title {
+		@include card_title;
+	}
+
+	&_speed_title,
+	&_deg_title {
+		@include texts;
+	}
+
+	&_speed,
+	&_deg {
+		&_span {
+			@include texts-span;
+		}
+
+		&_icon {
+			@include icons_card_span;
+		}
+	}
+
+	&_deg {
+		padding-top: 15px;
+	}
+}

@@ -1,0 +1,22 @@
+.cityTimezone {
+	@include card;
+	&_title {
+		@include card_title;
+	}
+
+	&_lat,
+	&_long {
+		@include texts;
+
+		&_span {
+			@include texts-span;
+			&_icon {
+				@include icons_card_span;
+			}
+		}
+	}
+
+	&_lat {
+		margin-top: 15px;
+	}
+}

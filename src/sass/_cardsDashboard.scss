@@ -1,0 +1,21 @@
+.cardsDashBoard {
+	background: $bgBlue;
+	height: 748px;
+	border-radius: $radius;
+	padding: 0 35px;
+	padding-top: 45px;
+
+	&_cards {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		gap: 20px;
+	}
+}
+
+// Aqui importamos las cards de los elementos
+@import './cityName';
+@import './cityTimezone';
+@import './cityWind';
+@import './cityTemp';

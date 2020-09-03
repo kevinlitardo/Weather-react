@@ -1,0 +1,30 @@
+.search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	&_form_input {
+		border: none;
+		height: 35px;
+		width: 290px;
+		border-radius: $radius;
+		padding-left: 35px;
+		outline: none;
+		font-size: 14px;
+		text-transform: capitalize;
+		font-weight: 600;
+		letter-spacing: 0.6px;
+		&::placeholder {
+			opacity: 0.8;
+			text-transform: none;
+			color: $gray;
+		}
+	}
+	&_form_icon {
+		position: absolute;
+		left: 10px;
+		bottom: 10px;
+		opacity: 0.8;
+		font-size: 17px;
+		color: $gray;
+	}
+}
