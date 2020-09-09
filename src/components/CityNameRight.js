@@ -41,10 +41,10 @@ export default function CityTemp() {
 	// Empieza desde cero
 	switch (month) {
 		case 0:
-			month = 'January'
+			month = 'Jan'
 			break
 		case 1:
-			month = 'February'
+			month = 'Feb'
 			break
 		case 2:
 			month = 'March'
@@ -62,33 +62,33 @@ export default function CityTemp() {
 			month = 'July'
 			break
 		case 7:
-			month = 'August'
+			month = 'Aug'
 			break
 		case 8:
-			month = 'September'
+			month = 'Sep'
 			break
 		case 9:
-			month = 'October'
+			month = 'Oct'
 			break
 		case 10:
-			month = 'November'
+			month = 'Nov'
 			break
 		case 11:
-			month = 'December'
+			month = 'Dec'
 			break
 	}
 
 	// console.log(day, date, month);
 
 	return (
-		<div>
+		<>
 			{!loading && (
-				<div className='right-name'>
-					<h2>{weather.name}</h2>
-					<h3>{weather.sys.country}</h3>
-					<h3>{`${day}, ${date} ${month}`}</h3>
+				<div className='right_name'>
+					<h2 className='right_name_title'>{weather.name}</h2>
+					<h3 className='right_name_country'>{weather.sys.country}</h3>
+					<h3 className='right_name_date'>{`${day}, ${date} ${month}`}</h3>
 				</div>
 			)}
-		</div>
+		</>
 	)
 }

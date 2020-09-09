@@ -1,6 +1,9 @@
 .rightDashboard {
 	padding-top: 45px;
+	padding-left: 45px;
 }
 
 // Aqui importamos los elementos
 @import './_rightDashboard/toggle';
+@import './_rightDashboard/rightName.scss';
+@import './_rightDashboard/todayStatic';

@@ -1,37 +1,40 @@
 .toggle {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
+	text-align: right;
+	// Input Checkbox
 	&_input[type='checkbox'] {
 		position: relative;
-		width: 80px;
-		height: 40px;
+		width: 65px;
+		height: 35px;
 		-webkit-appearance: none;
 		appearance: none;
-		background: $gray;
+		background: $darkBlue;
 		outline: none;
 		border-radius: $radius;
-		box-shadow: inset 0 0 5px rgba(#000000, 0.2);
-		transition: 0.5s ease;
+		box-shadow: inset 0 0 5px rgba($darkBlue, 0.2);
+		transition: 0.3s ease;
 
 		&::before {
 			content: '';
 			position: absolute;
-			width: 40px;
-			height: 40px;
+			width: 35px;
+			height: 35px;
 			border-radius: 50%;
 			top: 0;
 			left: 0;
-			background: #fff;
+			background: $orange;
 			transform: scale(1.1);
-			box-shadow: 0 2px 5px rgba(#000000, 0.2);
-			transition: 0.5s;
+			box-shadow: 0 2px 5px rgba($darkBlue, 0.2);
+			transition: 0.3s;
 		}
 
 		&:checked {
-			background: $darkBlue;
+			background: $bgBlue;
 		}
 
 		&:checked::before {
-			left: 40px;
+			left: 28px;
+			// background: $bgBlue;
 		}
 	}
 }
