@@ -10,7 +10,7 @@ export default function Toogle() {
 
 	return (
 		<div className='toggle'>
-			<input type='checkbox' onChange={handleChange} />
+			<input className='toggle_input' type='checkbox' onChange={handleChange} />
 		</div>
 	)
 }

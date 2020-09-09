@@ -15,7 +15,8 @@
 }
 
 // Aqui importamos las cards de los elementos
-@import './cityName';
-@import './cityTimezone';
-@import './cityWind';
-@import './cityTemp';
+@import './_centerDashboard/search';
+@import './_centerDashboard/cityName';
+@import './_centerDashboard/cityTemp';
+@import './_centerDashboard/cityTimezone';
+@import './_centerDashboard/cityWind';
