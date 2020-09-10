@@ -7,7 +7,7 @@ export default function CityTemp() {
 	const { weather, loading } = useContext(WeatherContext)
 
 	return (
-		<div>
+		<>
 			{!loading && (
 				<div className='cardsRight'>
 					<div className='cardsRight_wind'>
@@ -24,6 +24,6 @@ export default function CityTemp() {
 					</div>
 				</div>
 			)}
-		</div>
+		</>
 	)
 }

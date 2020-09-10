@@ -11,10 +11,10 @@ export default function CityTemp() {
 			{!loading && (
 				<div className='today'>
 					<h1 className='today_title'>Today</h1>
-					{/*TODO: Agregar icono o svg del clima <div> ICON </div> */}
-					<div className='today_date_container'>
+					<div className='today_date'>
+						{/*TODO: Agregar icono o svg del clima <div> ICON </div> */}
 						<p className='today_date_number'>
-							{(weather.main.temp - 273.15).toFixed(2)}
+							{(weather.main.temp - 273.15).toFixed(0)}
 							<span className='today_date_number_span'>°C</span>
 						</p>
 						<p className='today_date_state'>{weather.weather[0].main}</p>
