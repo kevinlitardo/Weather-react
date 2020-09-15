@@ -20,10 +20,6 @@ If you want to join, just send the email as an issue and we will gladly accept y
  <h3 align="left">To-do</h3>
 
 <p align="left">
-  Ver acomodo de las cards si todas seran con grid
-</p>
-
-<p align="left">
   Terminar diseño de RightDashboard
 </p>
 

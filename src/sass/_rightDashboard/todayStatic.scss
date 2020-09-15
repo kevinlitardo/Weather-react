@@ -8,6 +8,17 @@
 		margin-bottom: 35px;
 	}
 
+	&_temp-container {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&_icon-temp {
+		font-size: 56px;
+		color: $orange;
+	}
+
 	&_date {
 		&_number {
 			font-size: 55px;
