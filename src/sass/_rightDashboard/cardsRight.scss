@@ -1,0 +1,29 @@
+.cardsRight {
+	display: flex;
+	justify-content: space-evenly;
+	justify-items: center;
+	align-items: center;
+
+	&_wind,
+	&_humidity,
+	&_rain {
+		&_icon {
+			margin-bottom: 11px;
+			background: $bgBlue;
+			color: $blue;
+			width: 44px;
+			height: 44px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 15px;
+			font-size: 20px;
+		}
+
+		&_text {
+			text-align: center;
+			font-size: 12px;
+			color: $desaturatedBlue;
+		}
+	}
+}

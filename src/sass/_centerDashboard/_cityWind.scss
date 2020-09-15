@@ -1,0 +1,23 @@
+.cityWind {
+	@include card;
+	&_title {
+		@include card_title;
+	}
+
+	&_grid {
+		@include grid_template;
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 10px;
+	}
+
+	&_speed_title,
+	&_deg_title {
+		@include texts;
+		// margin-top: 15px;
+	}
+
+	&_speed,
+	&_deg {
+		@include text-card;
+	}
+}

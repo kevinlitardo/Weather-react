@@ -1,0 +1,20 @@
+.cityTimezone {
+	@include card;
+	&_title {
+		@include card_title;
+	}
+
+	&_grid {
+		@include grid_template;
+	}
+
+	&_lat_title,
+	&_long_title {
+		@include texts;
+	}
+
+	&_long,
+	&_lat {
+		@include text-card;
+	}
+}

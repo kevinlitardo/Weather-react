@@ -1,0 +1,23 @@
+.cityTemp {
+	@include card;
+	&_title {
+		@include card_title;
+	}
+
+	&_max_title,
+	&_min_title,
+	&_hum_title {
+		@include texts;
+		margin: 0;
+	}
+
+	&_grid {
+		@include grid_template;
+	}
+
+	&_max,
+	&_min,
+	&_hum {
+		@include text-card;
+	}
+}
