@@ -1,6 +1,23 @@
 .toggle {
 	margin-bottom: 50px;
 	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	&_span {
+		font-size: 24px;
+		font-weight: 600;
+		color: $darkBlue;
+		margin-right: 10px;
+
+		&_theme {
+			font-size: 24px;
+			font-weight: 600;
+			color: $darkBlue;
+			margin-right: 5px;
+		}
+	}
 	// Input Checkbox
 	&_input[type='checkbox'] {
 		position: relative;
